@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova conta</title>
+
+    <link rel="stylesheet" href="./assets/css/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <h1>NOVA CONTA</h1>
+
+                <div class="input-box">
+                    <label for="nome">Nome de usuário</label> </br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome de usuário..." class="input-user" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail</label> </br>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail..." class="input-user" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="telefone">Telefone</label> </br>
+                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone..." class="input-user" required>
+                </div>
+
+                <div class="input-box gender-box">
+                    <p>Gênero:</p>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                </div>
+
+                <div class="input-box">
+                    <label for="data-nascimento">Data de nascimento</label></br>
+                    <input type="date" name="data-nascimento" id="data-nascimento" class="input-user" >
+                </div>
+
+                <div class="input-box">
+                    <label for="senha">Senha</label> </br>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." class="input-user" required>
+                </div>
+
+                <p class="info">Já tem uma conta? <a href="./login.html">Clique aqui</a> para fazer login.</p>
+
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

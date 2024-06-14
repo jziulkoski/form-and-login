@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Federo", sans-serif;
+}
+
+body {
+    background: url(../images/background-form.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container fieldset {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    padding: 25px;
+    width: 50px;
+    margin: 20px 0;
+
+    background-color: rgba(44, 44, 44, 0.5);
+    border-radius: 20px;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.container fieldset h1 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+
+    padding-bottom: 10px;
+}
+
+.input-box .input-user {
+    display: flex;
+    width: 400px;
+    height: 35px;
+    justify-content: center;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(177, 177, 177, 1);
+    color: rgba(106, 106, 106, 1);
+}
+
+.input-box label, p {
+    right: 80px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.gender-box {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.info {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.info a {
+    color: #00003B;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#submit {
+    height: 60px;
+    width: 200px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 59, 1);
+
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(187, 185, 185, 1);
+
+    cursor: pointer;
+}
+
+#submit:hover {
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 20px -5px;
+}
+
+@media screen and (max-width: 580px) {
+    .container fieldset h1 {
+        font-size: 34px;
+    }
+
+    .input-box .input-user {
+        width: 300px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container fieldset h1 {
+        font-size: 28px;
+    }
+    
+    .input-box .input-user {
+        width: 250px;
+        height: 30px;
+    }
+}

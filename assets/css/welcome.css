@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Federo", sans-serif;
+}
+
+body {
+    background: url(../images/background-welcome.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.logo {
+    display: flex;
+    border: 3px solid rgb(228, 228, 228);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: underline;
+    color: rgb(228, 228, 228);
+}
+
+.logo:hover {
+    border: 3px solid #ff92e4;
+    color: #ff92e4;
+}
+
+.btn-exit button {
+    padding: 10px;
+    background-color: #B44698;
+    border: none;
+    border-radius: 25px;
+    color: rgb(228, 228, 228);
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-exit button:hover {
+    box-shadow: inset rgba(0, 0, 0, 0.192) 0px 0px 20px -5px;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    padding: 40px;
+    gap: 20px;
+    
+    width: 400px;
+    height: 200px;
+    
+    background-color: rgba(30, 30, 30, 0.3);
+    border-radius: 20px;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.text-welcome {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+
+    background-color: #e940bf;
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+    
+.social-media li a {
+    text-decoration: none;
+
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.social-media li a i {
+    padding: 10px;
+}
+
+.social-media i:hover {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.behance-icon:hover {
+    background-color: #0048e4ad;
+}
+
+.github-icon:hover {
+    background-color: #6d2587a1;
+}
+
+.linkedin-icon:hover {
+    background-color: #0a66c2a1;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 300px;
+    }
+
+    .text-welcome {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Federo", sans-serif;
+}
+
+body {
+    background: url(../images/background-main-screen.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    padding: 50px;
+    gap: 20px;
+    
+    background-color: rgba(30, 30, 30, 0.4);
+    border-radius: 20px;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+}
+
+.text-message {
+    text-align: center;
+}
+
+.text-message h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.text-message p {
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+}
+
+.btn-option a button {
+    width: 100%;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+    background-color: #B44698;
+
+    cursor: pointer;
+}
+
+.btn-option a button {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+.btn-option a button:hover {
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 20px -5px;
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        margin: 30% 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 30% 15%;
+    }
+}
