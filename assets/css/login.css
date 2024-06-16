@@ -74,26 +74,27 @@ body div h1 {
     text-decoration: none;
 }
 
-body div button {
+.btn-entrar a button {
     position: relative;
-    padding: 7%;
+    width: 160px;
+    height: 50px;
     margin-top: 30px;
-    width: 60%;
 
     border: none;
     border-radius: 20px;
     box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
     background-color: rgba(107, 22, 102, 1);
-}
-    
-body div button {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(187, 185, 185, 1);
+
+    cursor: pointer;
 }
 
-body div button:hover {
+.btn-entrar a button {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-entrar button:hover {
     box-shadow: inset rgb(0, 0, 0) 0px 0px 20px -5px;
 }
 
